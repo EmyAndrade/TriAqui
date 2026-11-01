@@ -5,7 +5,6 @@ const path = require('path');
 const crypto = require('crypto');
 const mysql = require('mysql2/promise');
 const bcrypt = require('bcrypt');
-const express = require('express');
 require('../envConfig').loadEnv(path.join(__dirname,'../.env'));
 
 async function main() {
@@ -29,7 +28,7 @@ async function main() {
     await pool.query("INSERT INTO especialidades(id,nome) VALUES (1,'Especialidade teste')");
     await pool.query("INSERT INTO profissionais(id,usuario_id,registro_profissional) VALUES (1,4,'TESTE-1'),(2,6,'TESTE-2')");
     await pool.query('INSERT INTO profissional_especialidades VALUES (1,1),(2,1)');
-    const app=express();app.use(express.json());app.use('/api/triaqui',require('../routesPortalTriAqui'));
+    const app=require('../server');
     server=await new Promise(resolve=>{const instance=app.listen(0,'127.0.0.1',()=>resolve(instance));});
     const base=`http://127.0.0.1:${server.address().port}/api/triaqui`;
     const tokens={};

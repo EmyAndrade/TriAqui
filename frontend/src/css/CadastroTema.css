@@ -1,0 +1,41 @@
+.login-art { display: flex; align-items: center; justify-content: space-between; }
+.public-navbar.app-navbar { grid-template-columns: 1fr auto; }
+.side-bottom { gap: 10px; }
+.register-form > label { margin-bottom: 0; align-content: start; min-width: 0; width: 100%; }
+.register-form > label input { box-sizing: border-box; width: 100%; min-width: 0; height: 50px; }
+.register-error { margin-bottom: 0; }
+.register-back { margin-top: 22px; }
+.register-section { display: flex; align-items: center; gap: 8px; padding-top: 12px; border-top: 1px solid var(--layout-border); color: var(--layout-primary-dark); }
+.field-error { color: var(--layout-danger, #be123c); }
+.field-hint { color: var(--layout-muted); }
+.form-field small { font-size: .8rem; font-weight: 500; }
+.form-field input[aria-invalid="true"] { border-color: var(--layout-danger); }
+.cep-message { display: flex; align-items: center; gap: 8px; font-size: .9rem; margin: 0; color: var(--layout-primary-dark); }
+.cep-message.field-error { color: var(--layout-danger); }
+.registration-success { display: grid; justify-items: center; gap: 16px; padding: 24px 0; }
+.registration-success > svg { color: var(--layout-primary); }
+.registration-success h2 { font-size: 1.5rem; font-weight: 800; }
+.registration-success p { color: var(--layout-muted); }
+body[data-theme="dark"] { --bs-body-bg: var(--layout-bg); --bs-body-color: var(--layout-text); }
+body[data-theme="dark"] .brand img,
+body[data-theme="dark"] .auth-card > img { filter: brightness(1.55); }
+body[data-theme="dark"] .form-card > header::before { filter: brightness(1.55); }
+body[data-theme="dark"] .form-error,
+body[data-theme="dark"] .api-banner { background: #3c1c28; color: #fda4af; border-color: #773046; }
+body[data-theme="dark"] .form-field [aria-invalid="true"] { border-color: #fb7185; }
+body[data-theme="dark"] .field-error { color: #fda4af; }
+body[data-theme="dark"] .field-hint,
+body[data-theme="dark"] .demo-login,
+body[data-theme="dark"] .new { color: var(--layout-muted); }
+body[data-theme="dark"] .risk-alta,
+body[data-theme="dark"] .risk-emergencia { background: #3c1c28; color: #fda4af; }
+body[data-theme="dark"] .risk-moderada { background: #3b2e13; color: #fcd34d; }
+body[data-theme="dark"] .risk-baixa,
+body[data-theme="dark"] .sent { background: #13322f; color: #6ee7b7; }
+body[data-theme="dark"] .event > span { background: #26343f; color: #cbd5e1; }
+body[data-theme="dark"] .appt em { background: #172d4c; color: #93c5fd; }
+@media (max-width: 760px) {
+  .public-navbar.app-navbar { grid-template-columns: 1fr auto; }
+  .public-navbar .brand-link img { max-width: 140px; }
+  .side-bottom { gap: 4px; }
+}

@@ -1,0 +1,21 @@
+.form-error,
+.api-banner {
+  margin: 0 0 14px;
+  padding: 10px 12px;
+  border: 1px solid #f3c9c2;
+  border-radius: 8px;
+  background: #fff0ed;
+  color: #b34f43;
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.api-banner { max-width: 800px; }
+
+.demo-login {
+  margin: 12px 0 0;
+  color: #708481;
+  text-align: center;
+  font-size: 10px;
+}

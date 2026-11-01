@@ -1,0 +1,46 @@
+{
+  "version": "triaqui-nb-sintetico-v1",
+  "purpose": "Exemplos inteiramente fictícios para demonstrar classificação textual. Não é um protocolo clínico nem um conjunto de dados validado para atendimento real.",
+  "examples": {
+    "baixa": [
+      "consulta de rotina para acompanhamento e renovacao de receita",
+      "retorno agendado para mostrar exames de rotina",
+      "avaliacao de rotina acompanhamento preventivo",
+      "renovacao de receita e acompanhamento habitual",
+      "consulta eletiva retorno para apresentar exames",
+      "agendamento de exame preventivo de rotina",
+      "acompanhamento regular de condicao estavel",
+      "retorno programado para acompanhamento preventivo"
+    ],
+    "moderada": [
+      "febre e dor de garganta desde hoje",
+      "tosse e coriza com mal estar leve",
+      "dor moderada de cabeca e mal estar",
+      "dor de garganta com tosse ha dois dias",
+      "febre baixa coriza e tosse leve",
+      "enjoo e dor moderada de barriga",
+      "dor muscular moderada e cansaco leve",
+      "tosse persistente com dor leve de garganta"
+    ],
+    "alta": [
+      "dor abdominal intensa com vomitos repetidos",
+      "febre alta persistente com fraqueza intensa",
+      "dor intensa na barriga e vomitos ha horas",
+      "vomitos repetidos e dificuldade para beber agua",
+      "dor forte de cabeca com tontura intensa",
+      "piora progressiva da febre e vomitos frequentes",
+      "dor muito forte e mal estar intenso",
+      "dor intensa persistente com suor e fraqueza"
+    ],
+    "emergencia": [
+      "dificuldade intensa para respirar e desmaio",
+      "dor forte no peito com falta de ar intensa",
+      "perda de consciencia e respiracao muito dificil",
+      "convulsao e perda de consciencia",
+      "sangramento intenso com perda de consciencia",
+      "dor no peito falta de ar e suor intenso",
+      "desmaio com dificuldade intensa para respirar",
+      "confusao repentina perda de forca e dificuldade de falar"
+    ]
+  }
+}
